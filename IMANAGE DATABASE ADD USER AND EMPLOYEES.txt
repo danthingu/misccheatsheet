@@ -1,0 +1,65 @@
+select * from Employees where LoginName like '%qasamsha05pod3%'
+
+insert into employees(
+[Key]
+,BusinessUnitKey
+,CreatedDate
+,DepartmentKey
+,EmailAddress
+,EmployeeId
+,IsDeleted
+,JobFunction
+,LineOfBusiness
+,LoginAddress
+,LoginName
+,ModifiedDate
+,[Name]
+,OperationUnitKey
+,ResourceName
+,Source
+)
+values
+(
+'6E56F651-3361-4457-95C0-00280227DDA1', -----
+'9365589E-9F37-4F25-B067-798A48B13C55',
+'2018-06-04 17:26:37.2231849',
+'C8EBD8BE-1C66-4069-AEBB-C4185BD0ACC1',
+	'thithu01@roberthalf.com', -------
+	'R000000016'	-------
+	,0	
+	,'Senior Consultant 1'
+	,'LOB 6'
+		,'qasamsha05pod3@roberthalf.com'	-------
+		,'na\qasamsha05pod3'	-------
+		,'2018-06-04 17:26:37.2231849'
+			,'qasamsha05pod3' ----
+			,'84859820-39B2-464B-860C-3919C3E15D2C'
+			,'Practice Employee'
+			,0
+)
+
+select * from users
+insert into users
+(
+[Key]
+,CreatedDate
+,EmployeeKey
+,IsDeleted
+,ModifiedDate
+,[Name]
+,[Role]
+)
+values
+(
+'60B7D413-F43E-456D-B82E-0027B5D2CFA1',
+'2018-06-04 17:26:38.7311325',
+'6E56F651-3361-4457-95C0-00280227DDA1',
+0,
+'2018-06-04 17:26:38.7311325',
+'qasamsha05pod3',
+5
+)
+
+update users set Role = 5 where name = 'qasamsha05pod3'
+
+select employeeid from employees order by employeeid
